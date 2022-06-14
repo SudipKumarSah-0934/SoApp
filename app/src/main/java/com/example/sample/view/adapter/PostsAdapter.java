@@ -173,6 +173,12 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.PostsAdapter
                     }
                 }
             });
+            holder.btn_comment.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                }
+            });
 
 
     }
@@ -189,6 +195,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.PostsAdapter
         ConstraintLayout commentCons;
         ImageButton menu;
         View line;
+        Button btn_comment;
         RecyclerView commentRecycler;
 
         public PostsAdapterVH(@NonNull View itemView) {
@@ -208,6 +215,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.PostsAdapter
             commentHeader=itemView.findViewById(R.id.commentHead);
             line=itemView.findViewById(R.id.view3);
             imageViewPost=itemView.findViewById(R.id.imageViewPost);
+            btn_comment=itemView.findViewById(R.id.btn_comment);
         }
     }
 
